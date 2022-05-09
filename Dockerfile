@@ -10,10 +10,10 @@ WORKDIR /app
 COPY . /app
 
 RUN mkdir -p ./app/functions ./app/static
-COPY ./functions/* ./app/functions
-COPY ./static/* ./app/static
-COPY ./temp_content/* ./app/temp_content
+COPY ./functions/* ./app/functions/
+COPY ./static/* ./app/static/
+
 
 RUN pip install -r requirements.txt
 
-CMD  ["flask", "run", "--host", "0.0.0.0", "--port", "5000"]
+CMD  ["flask", "run", "--host", "0.0.0.0", "--port", "80"]

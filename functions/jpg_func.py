@@ -34,7 +34,7 @@ def search_and_down(name): # difining a func that will take the name of the ente
         id = search[i].movieID
         result.append(id)
         movieName.append(search[i]['title']) #adding movie names to the list
-        movieid = "tt" + result[0] #combining words to create the api movie id for later
+        movieid= "tt" + result[0] #combining words to create the api movie id for later
         print("1",movieName[0],":", "Movieid:", result[0]) #just for check and for flask console reaction
         #print("2",movieid)
         IMG_PATTERN = 'http://api.themoviedb.org/3/movie/{imdbid}/images?api_key={key}'

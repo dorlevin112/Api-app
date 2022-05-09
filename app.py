@@ -6,6 +6,7 @@ import pymongo
 from flask import Flask, render_template, request, jsonify
 from functions.pymongo_intr import down_req
 from functions.jpg_func import search_and_down
+from functions.mutli_res import multi_res
 from pymongo import MongoClient
 
 
